@@ -22,6 +22,7 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
 */
 
+// esp32-wroom-32 开发板 led pin 脚为 GPIO2
 #define LED_BUILTIN 2
 
 // the setup function runs once when you press reset or power the board
