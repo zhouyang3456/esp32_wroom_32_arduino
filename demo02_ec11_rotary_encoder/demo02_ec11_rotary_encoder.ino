@@ -94,7 +94,9 @@ void setup() {
   SW.attachLongPressStop(__longPressStop);
 
   // 编码器单边沿检测
-  encoder.attachSingleEdge(ROTARY_ENCODER_A_PIN, ROTARY_ENCODER_B_PIN);
+  // encoder.attachSingleEdge(ROTARY_ENCODER_A_PIN, ROTARY_ENCODER_B_PIN);
+  // 编码器双边沿检测，建议使用
+  encoder.attachHalfQuad(ROTARY_ENCODER_A_PIN, ROTARY_ENCODER_B_PIN);
   encoder.setCount(0);
 }
 
